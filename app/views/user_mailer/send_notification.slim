@@ -1,3 +1,4 @@
 p = "Dear #{@receiver.full_name},"
 p = "#{@user.full_name} just #{@action} on "
-	a href=(@url_show_post) | post
+    = link_to "post", @url_show_post
+	
