@@ -32,6 +32,10 @@ group :development, :test do
   gem "rb-fsevent"
 end
 
+group :production do
+  gem 'pg'
+end
+
 gem 'devise'
 
 gem 'activeadmin', :git => 'git://github.com/gregbell/active_admin.git'
