@@ -1,9 +1,10 @@
 class ApplicationFrontEndController < ApplicationController
   
+  before_filter :authenticate_user!
   before_filter :get_subjects
   before_filter :check_permission, :except => [:no_permission]
   before_filter :load_new_feeds
-  before_filter :authenticate_user!
+  
   
   protected
   
