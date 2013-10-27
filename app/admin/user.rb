@@ -6,7 +6,8 @@ ActiveAdmin.register User do
       if @user.save
         redirect_to admin_user_path(@user), flash[:success] => "User has saved successfully"
       else
-        response_with @user
+        #response_with @user
+        redirect_to new_admin_user_path, flash[:error] => "User cannot be saved"
       end
     end
   end
