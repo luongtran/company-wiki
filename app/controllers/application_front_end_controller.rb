@@ -114,7 +114,7 @@ class ApplicationFrontEndController < ApplicationController
   
   def load_new_feeds
     subj_ids = []
-    if !@subjects.nil?
+    if !@subjects.nil? && @subjects.count && !@subjects[0].nil?
       @subjects[0].each do |subject|
         subj_ids << subject.id
       end
