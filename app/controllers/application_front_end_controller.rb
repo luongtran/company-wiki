@@ -114,9 +114,12 @@ class ApplicationFrontEndController < ApplicationController
   
   def load_new_feeds
     subj_ids = []
-    @subjects[0].each do |subject|
-      subj_ids << subject.id
+    if !@subjects.nil?
+      @subjects[0].each do |subject|
+        subj_ids << subject.id
+      end
     end
+    
     
     posts = Post.find(:all, :conditions => ["subject_id IN (?)", subj_ids])
     
