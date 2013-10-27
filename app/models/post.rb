@@ -20,7 +20,7 @@ class Post < ActiveRecord::Base
           
   def send_notification_email
     activity = PublicActivity::Activity.last
-    UserMailer.delay.send_notification(self.user_id, self.id, activity.key).deliver
+    UserMailer.send_notification(self.user_id, self.id, activity.key).delay.deliver
   end
   
 end
