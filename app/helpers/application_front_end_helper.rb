@@ -1,0 +1,2 @@
+module ApplicationFrontEndHelper
+end

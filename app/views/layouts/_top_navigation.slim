@@ -1,0 +1,46 @@
+.navbar.navbar-top.navbar-inverse
+  .navbar-inner
+    .container-fluid
+      a.brand href="#"
+      /! the new toggle buttons
+      ul.nav.pull-right
+        li.toggle-primary-sidebar.hidden-desktop data-target=".nav-collapse-primary" data-toggle="collapse"
+          button.btn.btn-navbar type="button"
+            i.icon-th-list
+        li.hidden-desktop data-target=".nav-collapse-top" data-toggle="collapse"
+          button.btn.btn-navbar type="button"
+            i.icon-align-justify
+      - unless defined? @no_controls
+        .nav-collapse.nav-collapse-top.collapse
+          ul.nav.full.pull-right
+            li
+                  - if user_signed_in?
+		            = link_to current_user.full_name, user_path(current_user)
+		            = link_to "Sign out", destroy_user_session_path, method: :delete
+		          - else
+		            = link_to "Signin", new_session_path(User.new)
+          form.navbar-search.pull-right
+            input.search-query.animated placeholder="Search" type="text"
+              i.icon-search
+          ul.nav.pull-right
+            li.active
+              a href="#" title="Go home"
+                i.icon-home
+                | Home
+            li
+              a href="#" title="Manage users"
+                i.icon-user
+                | Users
+            li.dropdown
+              a.dropdown-toggle data-toggle="dropdown" href="#"
+                | Dropdown
+                b.caret
+              ul.dropdown-menu
+                li
+                  a href="#"
+                li
+                  a href="#"
+                li
+                  a href="#"
+                li
+                  a href="#"

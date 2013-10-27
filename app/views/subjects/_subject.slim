@@ -1,0 +1,17 @@
+li.nav-bootstrap
+		- if subject.is_root?
+			label.tree-toggle.nav-header
+				/! span.icon-text-width               
+				span 
+					=' link_to subject.title, subject
+				- if subject.has_children?
+					span.icon-chevron-down
+		- else
+		  	/! span.icon-text-width               
+			span 
+				=' link_to subject.title, subject
+			- if subject.has_children? 
+				span.icon-chevron-down
+
+		              
+			

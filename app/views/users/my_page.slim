@@ -1,0 +1,145 @@
+.row-fluid
+  #my-timeline.span12
+    .timeline-container
+      .timeline-container
+        .timeline-label
+          span.label.label-primary.arrowed-in-right.label-lg
+            b Today
+        .timeline-items
+          .timeline-item.clearfix
+            .timeline-info
+              =' image_tag current_user.avatar.url(:thumb)
+              span.label.label-info.label-sm 16:22
+            .widget-box.transparent
+              .widget-header.widget-header-small
+                h5.smaller
+                  a.blue href="#"
+                  span.grey reviewed a product
+                span.widget-toolbar.no-border
+                  i.icon-time.bigger-110
+                  | 16:22
+                span.widget-toolbar
+                  a data-action="reload" href="#"
+                    i.icon-refresh
+                  a data-action="collapse" href="#"
+                    i.icon-chevron-up
+              .widget-body
+                .widget-main
+                  | Anim pariatur cliche reprehenderit, enim eiusmod
+                  span.red high life
+                  | accusamus terry richardson ad squid …
+                  .space-6
+                  .widget-toolbox.clearfix
+                    .pull-left
+                      i.icon-hand-right.grey.bigger-125
+                      a.bigger-110 href="#"
+                    .pull-right.action-buttons
+                      a href="#"
+                        i.icon-ok.green.bigger-130
+                      a href="#"
+                        i.icon-pencil.blue.bigger-125
+                      a href="#"
+                        i.icon-remove.red.bigger-125
+          .timeline-item.clearfix
+            .timeline-info
+              i.timeline-indicator.icon-food.btn.btn-success.no-hover
+            .widget-box.transparent
+              .widget-header.widget-header-small.hidden
+              .widget-body
+                .widget-main
+                  | Going to cafe for lunch
+                  .pull-right
+                    i.icon-time.bigger-110
+                    | 12:30
+          .timeline-item.clearfix
+            .timeline-info
+              i.timeline-indicator.icon-star.btn.btn-warning.no-hover.green
+            .widget-box.transparent
+              .widget-header.widget-header-small
+                h5.smaller New logo
+                span.widget-toolbar.no-border
+                  i.icon-time.bigger-110
+                  | 9:15
+                span.widget-toolbar
+                  a data-action="reload" href="#"
+                    i.icon-refresh
+                  a data-action="collapse" href="#"
+                    i.icon-chevron-up
+              .widget-body
+                .widget-main
+                  | Designed a new logo for our website. Would appreciate feedback.
+                  .widget-toolbox.clearfix
+                    .pull-right.action-buttons
+                      .space-4
+                      div
+                        a href="#"
+                          i.icon-heart.red.bigger-125
+                        a href="#"
+                          i.icon-facebook.blue.bigger-125
+                        a href="#"
+                          i.icon-reply.light-green.bigger-130
+          .timeline-item.clearfix
+            .timeline-info
+              i.timeline-indicator.icon-beaker.btn.btn-default.no-hover
+            .widget-box.transparent
+              .widget-header.hidden
+              .widget-body
+                .widget-main Took the final exam. Phew!
+        /! /.timeline-items
+    .timeline-container
+      .timeline-label
+        span.label.label-success.arrowed-in-right.label-lg
+          b Yesterday
+      .timeline-items
+        .timeline-item.clearfix
+          .timeline-info
+            i.timeline-indicator.icon-beer.btn.btn-inverse.no-hover
+          .widget-box.transparent
+            .widget-header.widget-header-small
+              h5.smaller Haloween party
+              span.widget-toolbar
+                i.icon-time.bigger-110
+                | 1 hour ago
+            .widget-body
+              .widget-main
+                .clearfix
+                  .pull-left
+                    | Lots of fun at Haloween party.
+                    br
+                      | Take a look at some pics:
+        .timeline-item.clearfix
+          .timeline-info
+            i.timeline-indicator.icon-trophy.btn.btn-pink.no-hover.green
+          .widget-box.transparent
+            .widget-header.widget-header-small
+              h5.smaller Lorum Ipsum
+            .widget-body
+              .widget-main
+                | Anim pariatur cliche reprehenderit, enim eiusmod
+                span.green.bolder high life
+                | accusamus terry richardson ad squid …
+        .timeline-item.clearfix
+          .timeline-info
+            i.timeline-indicator.icon-food.btn.btn-success.no-hover
+          .widget-box.transparent
+            .widget-header.widget-header-small.hidden
+            .widget-body
+              .widget-main Going to cafe for lunch
+        .timeline-item.clearfix
+          .timeline-info
+            i.timeline-indicator.icon-bug.btn.btn-danger.no-hover
+          .widget-box.timeline-warning
+            .widget-header.header-color-red2.widget-header-small
+              h5.smaller Critical security patch released
+              span.widget-toolbar.no-border
+                i.icon-time.bigger-110
+                | 9:15
+              span.widget-toolbar
+                a data-action="reload" href="#"
+                  i.icon-refresh
+                a data-action="collapse" href="#"
+                  i.icon-chevron-up
+            .widget-body
+              .widget-main
+                | Please download the new patch for maximum security.
+      /! /.timeline-items

@@ -1,0 +1,8 @@
+#newfeeds
+  #newfeeds-header
+    span.icon-list style="margin-left: 20px;"
+    | New feed
+  #newfeeds-body
+  
+  	- for activity in @activities
+  		= render_activity(activity, :layout => "layouts/activity_wrapper")

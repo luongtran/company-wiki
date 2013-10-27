@@ -1,0 +1,194 @@
+#my-profile.row
+      #message.alert
+	  #profile-avatar.span3
+	    #avatar-picture
+	      - if !@user.avatar.nil?
+			= image_tag @user.avatar.url(:medium), :id => "img-avatar"
+		  - else
+			= image_tag "profile-pic.jpg", :id => "img-avatar"
+	      #avatar-upload.fileupload.fileupload-new data-provides="fileupload" style="display: none"
+	          .fileupload-preview.thumbnail style="width: 200px; height: 150px;"
+	          div
+	          	= form_for @user, :url => user_update_avatar_path(current_user), :html => {:remote => true, :method => "POST", :id => "update-profile-avatar", :multipart => true } do |f|
+		            span.btn.btn-file
+		              span.fileupload-new Select image
+		              span.fileupload-exists Change
+		              = f.file_field :avatar, :id => "avatar-input"
+		            /! a.btn.fileupload-exists data-dismiss="fileupload" href="#"
+		            button#avatar-upload-ok.btn type="submit" OK
+		            i#avatar-upload-close.icon-remove
+        #profile-name 
+        	span 
+        		=' @user.full_name
+	    javascript:
+	       $(document).ready(function(){
+	          $('#img-avatar').click(function(){
+	              $('#avatar-upload').css('display','block');
+	              $('#img-avatar').hide();
+	          });
+	          $('#avatar-upload-close').click(function(){
+	              $('#avatar-upload').hide();
+	              $('#img-avatar').show();
+	          });
+	          
+	          $("#avatar-upload-ok").click(function() {
+	            var options = {
+	                            beforeSubmit: showRequest,
+	            				success: showResponse
+	            			  };
+	          	$("#update-profile-avatar").ajaxForm(options).submit();
+			    return false;
+		      });
+	         
+	       });
+	       
+	       function showRequest(formData, jqForm, options) {
+	       		console.log(formData);
+	       }
+	       
+	       function showResponse(responseText, statusText, xhr, $form) {
+	       		var success = responseText.success;
+	       		var avatar_url = responseText.avatar_url
+	       		console.log(success);
+	       		if(success) {
+	       			$('#avatar-upload').css('display','none');
+	       			$('#img-avatar').attr("src", avatar_url);
+	                $('#img-avatar').show();
+	       		}
+	       }
+	       
+	  #profile-info.span7
+	    table#frofile-table
+	      tr
+	        th Fullname
+	        td =' @user.full_name
+	      tr
+	        th Department
+	        td =' @user.department
+	      tr
+	        th Age
+	        td 24
+	      tr
+	        th Phone
+	        td =' @user.phone_number
+	      tr
+	        th Joined
+	        td =' @user.created_at
+	      tr
+	        th Last Online
+	        td =' distance_of_time_in_words_to_now @user.last_sign_in_at
+	      tr
+	        th About me
+	        td =' raw @user.about_me
+	  /! end#my-profile
+  
+#profile-activity.row
+	  #newfeeds-header.cle style="position: relative"
+	    i#icon-rss-id.icon-large.icon-rss
+	    span style="padding-left: 40px;" | Recent Activities
+	  #profile-activity-body
+	    - for activity in @activities
+	      = render_activity(activity, :layout => "layouts/profile_activities")	
+	  javascript:
+	     $(document).ready(function(){
+	        $('#profile-activity-body').slimScroll({
+	              height: '250px'
+	        });
+	     });
+    
+
+#profile-seeting
+  .btn-group
+    a.btn.dropdown-toggle data-toggle="dropdown" href="#"
+      i.icon-large.icon-settings
+    ul.dropdown-menu
+      li
+        a data-toggle="modal" href="#change-pass-modal"  Change password
+         
+      li
+        a data-toggle="modal" href="#change-profile-modal"  Update profile
+      
+  #change-pass-modal.modal.hide.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+	  = form_for @user, :url => user_update_profile_path(current_user), 
+	    :html => {:remote => true, :'data-type' => 'json', :method => "POST", :class => "form-horizontal frm-update-profile", 
+	              :id => "update-profile", :multipart => true } do |f|
+	    .modal-header
+	      button.close aria-hidden="true" data-dismiss="modal" type="button"
+	      h3#myModalLabel Change password
+	    .modal-body
+	      .control-group
+	        label.control-label New Password
+	        .controls
+	          = f.password_field :password, :placeholder => "New Password", :required => true
+	      .control-group
+	        label.control-label Confirm Password
+	        .controls
+	          = f.password_field :password_confirmation, :placeholder => "Confirm Password", :required => true
+	    .modal-footer
+	      = button_tag "Cancel", :class => "btn btn-cancel", :type => "button"
+	      = button_tag "Save changed", :class => "btn btn-primary", :type => "submit"
+	      
+  #change-profile-modal.modal.hide.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+  	  = form_for @user, :url => user_update_profile_path(current_user), 
+  	  	:html => {:remote => true, :'data-type' => 'json', :method => "POST", :class => "form-horizontal frm-update-profile", 
+  	  	             :id => "update-profile", :multipart => true } do |f|
+	    .modal-header
+	      button.close aria-hidden="true" data-dismiss="modal" type="button"
+	      h3#myModalLabel Change profile
+	    .modal-body
+	      .control-group
+	        label.control-label for="first_name" Firstname
+	        .controls
+	          = f.text_field :first_name, :placeholder => "Firstname"
+	      .control-group
+	        label.control-label Lastname
+	        .controls
+	          = f.text_field :last_name, :placeholder => "Lastname"
+	      .control-group
+	      	label.control-label Department
+	      	.controls
+	      	  = f.text_field :department, :placeholder => "Department"
+	      .control-group
+	        label.control-label Date of birth
+	        .controls
+	          = f.datepicker :birthday
+	      .control-group
+	        label.control-label Address
+	        .controls
+	          = f.text_field :address, :placeholder => "Address"
+	      .control-group
+	        label.control-label Phone
+	        .controls
+	          = f.text_field :phone_number, :placehoder => "Phone"
+	      .control-group
+	        label.control-label Get notification to email
+	        .controls
+	          = f.check_box :get_notification_to_email
+	      .control-group
+	        label.control-label About me
+	        .controls
+	          = f.text_area :about_me, :rows => 3
+	    .modal-footer
+	      button.btn.btn-cancel aria-hidden="true" data-dismiss="modal" Cancel
+	      button.btn.btn-primary type="submit" Save changed
+  javascript:
+	  	$(document).ready(function() {
+	  		$(".frm-update-profile").bind("ajax:success", function(xhr, data, status) {
+	  			console.log("Updated successfully");
+	  			console.log(data);
+	  			var success = data.success;
+	  			if(success) {
+	  				$("#message").removeClass("alert-warning").addClass("alert-success").text(data.message).fadeIn(200).delay(15000).fadeOut(200);
+	  			} else {
+	  				$("#message").removeClass("alert-success").addClass("alert-warning").text(data.message).fadeIn(200).delay(15000).fadeOut(200);
+	  			}
+	  			
+	  			$('#change-pass-modal').modal('hide');
+	  			$('#change-profile-modal').modal('hide');
+	  			
+	  		});
+	  		
+	  		$('.btn-cancel').on("click", function() {
+	  			$('#change-pass-modal').modal('hide');
+	  		});
+	  	});    

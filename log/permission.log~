@@ -1,0 +1,842 @@
+=============Log for permission==============
+action: view
+subject: 16
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+8
+#<Post id: 19, title: "Information technology", body: "<h3><strong>Information technology subject&nbsp;</s...", user_id: 1, publish: nil, subject_id: 16, created_at: "2013-09-24 18:59:50", updated_at: "2013-09-24 19:00:03">
+===========================================================
+#<Post id: 19, title: "Information technology", body: "<h3><strong>Information technology subject&nbsp;</s...", user_id: 1, publish: nil, subject_id: 16, created_at: "2013-09-24 18:59:50", updated_at: "2013-09-24 19:00:03">
+===========================================================
+Comment count 0
+Activities count: 2
+=============Log for permission==============
+action: view
+subject: 16
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+8
+#<Post id: 19, title: "Information technology", body: "<h3><strong>Information technology subject&nbsp;</s...", user_id: 1, publish: nil, subject_id: 16, created_at: "2013-09-24 18:59:50", updated_at: "2013-09-24 19:00:03">
+===========================================================
+8
+===========================================================
+Comment count 0
+Activities count: 2
+=============Log for permission==============
+action: view
+subject: 16
+Logged in
+is has subject true
+is has permission true
+=============Log for permission==============
+action: view
+subject: 16
+Logged in
+is has subject true
+is has permission true
+=============Log for permission==============
+action: view
+subject: 16
+Logged in
+is has subject true
+is has permission true
+============= Log for show in subject ===============
+[16, 20, 21, 19, 22]
+=============Log for permission==============
+action: view
+subject: 16
+Logged in
+is has subject true
+is has permission true
+============= Log for show in subject ===============
+[16, 20, 21, 19, 22]
+=============Log for permission==============
+action: view
+subject: 16
+Logged in
+is has subject true
+is has permission true
+============= Log for show in subject ===============
+[16, 20, 21, 19, 22]
+=============Log for permission==============
+action: view
+subject: 16
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 19, title: "Information technology", body: "<h3><strong>Information technology subject&nbsp;</s...", user_id: 1, publish: nil, subject_id: 16, created_at: "2013-09-24 18:59:50", updated_at: "2013-09-24 19:00:03">
+===========================================================
+0
+===========================================================
+Comment count 0
+Activities count: 2
+=============Log for permission==============
+action: view
+subject: 16
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 19, title: "Information technology", body: "<h3><strong>Information technology subject&nbsp;</s...", user_id: 1, publish: nil, subject_id: 16, created_at: "2013-09-24 18:59:50", updated_at: "2013-09-24 19:00:03">
+===========================================================
+0
+===========================================================
+Comment count 0
+Activities count: 2
+=============Log for permission==============
+action: view
+subject: 16
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 19, title: "Information technology", body: "<h3><strong>Information technology subject&nbsp;</s...", user_id: 1, publish: nil, subject_id: 16, created_at: "2013-09-24 18:59:50", updated_at: "2013-09-24 19:00:03">
+===========================================================
+0
+===========================================================
+Comment count 0
+Activities count: 2
+=============Log for permission==============
+action: view
+subject: 16
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 19, title: "Information technology", body: "<h3><strong>Information technology subject&nbsp;</s...", user_id: 1, publish: nil, subject_id: 16, created_at: "2013-09-24 18:59:50", updated_at: "2013-09-24 19:00:03">
+===========================================================
+0
+===========================================================
+Comment count 0
+Activities count: 2
+=============Log for permission==============
+action: view
+subject: 16
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 19, title: "Information technology", body: "<h3><strong>Information technology subject&nbsp;</s...", user_id: 1, publish: nil, subject_id: 16, created_at: "2013-09-24 18:59:50", updated_at: "2013-09-24 19:00:03">
+===========================================================
+0
+===========================================================
+Comment count 0
+Activities count: 2
+=============Log for permission==============
+action: view
+subject: 16
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 19, title: "Information technology", body: "<h3><strong>Information technology subject&nbsp;</s...", user_id: 1, publish: nil, subject_id: 16, created_at: "2013-09-24 18:59:50", updated_at: "2013-09-24 19:00:03">
+===========================================================
+0
+===========================================================
+Comment count 0
+Activities count: 2
+=============Log for permission==============
+action: update
+subject: 16
+Logged in
+is has subject true
+is has permission true
+=============Log for permission==============
+action: update
+subject: 16
+Logged in
+is has subject true
+is has permission true
+=============Log for permission==============
+action: view
+subject: 16
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 19, title: "Information technology subject", body: "<h3><strong>Information technology subject&nbsp;</s...", user_id: 1, publish: nil, subject_id: 16, created_at: "2013-09-24 18:59:50", updated_at: "2013-09-24 21:18:54">
+===========================================================
+0
+===========================================================
+Comment count 0
+Activities count: 3
+=============Log for permission==============
+action: view
+subject: 16
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 19, title: "Information technology subject", body: "<h3><strong>Information technology subject&nbsp;</s...", user_id: 1, publish: nil, subject_id: 16, created_at: "2013-09-24 18:59:50", updated_at: "2013-09-24 21:18:54">
+===========================================================
+===========================================================
+Comment count 0
+Activities count: 3
+=============Log for permission==============
+action: view
+subject: 16
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+9
+#<Post id: 19, title: "Information technology subject", body: "<h3><strong>Information technology subject&nbsp;</s...", user_id: 1, publish: nil, subject_id: 16, created_at: "2013-09-24 18:59:50", updated_at: "2013-09-24 21:18:54">
+===========================================================
+===========================================================
+Comment count 0
+Activities count: 3
+=============Log for permission==============
+action: view
+subject: 16
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+8
+#<Post id: 19, title: "Information technology subject", body: "<h3><strong>Information technology subject&nbsp;</s...", user_id: 1, publish: nil, subject_id: 16, created_at: "2013-09-24 18:59:50", updated_at: "2013-09-24 21:18:54">
+===========================================================
+===========================================================
+Comment count 0
+Activities count: 3
+=============Log for permission==============
+action: view
+subject: 16
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+9
+#<Post id: 19, title: "Information technology subject", body: "<h3><strong>Information technology subject&nbsp;</s...", user_id: 1, publish: nil, subject_id: 16, created_at: "2013-09-24 18:59:50", updated_at: "2013-09-24 21:18:54">
+===========================================================
+===========================================================
+Comment count 0
+Activities count: 3
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+============= Log for show in subject ===============
+[22]
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 18, title: "Install Ubuntu 13.04 version 2", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 02:23:42">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 4
+=============Log for permission==============
+action: update
+subject: 22
+Logged in
+is has subject true
+is has permission true
+=============Log for permission==============
+action: update
+subject: 22
+Logged in
+is has subject true
+is has permission true
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 18, title: "Install Ubuntu 13.04 version 3", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:20:28">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 5
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+10
+#<Post id: 18, title: "Install Ubuntu 13.04 version 3", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:20:28">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 5
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+2
+#<Post id: 18, title: "Install Ubuntu 13.04 version 3", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:20:28">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 5
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+1
+#<Post id: 18, title: "Install Ubuntu 13.04 version 3", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:20:28">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 5
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 18, title: "Install Ubuntu 13.04 version 3", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:20:28">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 5
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+10
+#<Post id: 18, title: "Install Ubuntu 13.04 version 3", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:20:28">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 5
+=============Log for permission==============
+action: update
+subject: 22
+Logged in
+is has subject true
+is has permission true
+=============Log for permission==============
+action: update
+subject: 22
+Logged in
+is has subject true
+is has permission true
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 18, title: "Install Ubuntu 13.04 version 4", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:21:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 6
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+11
+#<Post id: 18, title: "Install Ubuntu 13.04 version 4", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:21:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 6
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+10
+#<Post id: 18, title: "Install Ubuntu 13.04 version 4", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:21:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 6
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+2
+#<Post id: 18, title: "Install Ubuntu 13.04 version 4", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:21:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 6
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+1
+#<Post id: 18, title: "Install Ubuntu 13.04 version 4", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:21:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 6
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 18, title: "Install Ubuntu 13.04 version 4", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:21:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 6
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 18, title: "Install Ubuntu 13.04 version 4", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:21:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 6
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 18, title: "Install Ubuntu 13.04 version 4", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:21:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 6
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+11
+#<Post id: 18, title: "Install Ubuntu 13.04 version 4", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:21:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 6
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+10
+#<Post id: 18, title: "Install Ubuntu 13.04 version 4", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:21:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 6
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+2
+#<Post id: 18, title: "Install Ubuntu 13.04 version 4", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:21:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 6
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+11
+#<Post id: 18, title: "Install Ubuntu 13.04 version 4", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:21:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 6
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+10
+#<Post id: 18, title: "Install Ubuntu 13.04 version 4", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:21:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 6
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+11
+#<Post id: 18, title: "Install Ubuntu 13.04 version 4", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:21:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 6
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+11
+#<Post id: 18, title: "Install Ubuntu 13.04 version 4", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:21:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 7
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+11
+#<Post id: 18, title: "Install Ubuntu 13.04 version 4", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:21:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 8
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+10
+#<Post id: 18, title: "Install Ubuntu 13.04 version 4", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:21:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 9
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+2
+#<Post id: 18, title: "Install Ubuntu 13.04 version 4", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 21:21:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 10
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 18, title: "Install Ubuntu 13.04", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:23:41">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 10
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+12
+#<Post id: 18, title: "Install Ubuntu 13.04", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:23:41">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 11
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+11
+#<Post id: 18, title: "Install Ubuntu 13.04", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:23:41">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 12
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+10
+#<Post id: 18, title: "Install Ubuntu 13.04", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:23:41">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 13
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+2
+#<Post id: 18, title: "Install Ubuntu 13.04", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:23:41">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 14
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+1
+#<Post id: 18, title: "Install Ubuntu 13.04", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:23:41">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 15
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+13
+#<Post id: 18, title: "Install Ubuntu 13.04", body: "<ol class=\"no-bullets\">\n<li>\n<div>\n<h3>Using a DVD?...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:25:05">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 16
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+13
+#<Post id: 18, title: "Install Ubuntu 13.04", body: "<ol class=\"no-bullets\">\n<li>\n<div>\n<h3>Using a DVD?...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:25:05">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 16
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 18, title: "Install Ubuntu 13.04", body: "<ol class=\"no-bullets\">\n<li>\n<div>\n<h3>Using a DVD?...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:25:05">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 16
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+12
+#<Post id: 18, title: "Install Ubuntu 13.04", body: "<ol class=\"no-bullets\">\n<li>\n<div>\n<h3>Using a DVD?...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:25:05">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 16
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+11
+#<Post id: 18, title: "Install Ubuntu 13.04", body: "<ol class=\"no-bullets\">\n<li>\n<div>\n<h3>Using a DVD?...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:25:05">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 16
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+10
+#<Post id: 18, title: "Install Ubuntu 13.04", body: "<ol class=\"no-bullets\">\n<li>\n<div>\n<h3>Using a DVD?...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:25:05">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 16
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+2
+#<Post id: 18, title: "Install Ubuntu 13.04", body: "<ol class=\"no-bullets\">\n<li>\n<div>\n<h3>Using a DVD?...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:25:05">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 16
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+1
+#<Post id: 18, title: "Install Ubuntu 13.04", body: "<ol class=\"no-bullets\">\n<li>\n<div>\n<h3>Using a DVD?...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:25:05">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 16
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 18, title: "Install Ubuntu 13.04", body: "<ol class=\"no-bullets\">\n<li>\n<div>\n<h3>Using a DVD?...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:25:05">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 16
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 18, title: "Install Ubuntu 13.04", body: "<ol class=\"no-bullets\">\n<li>\n<div>\n<h3>Using a DVD?...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:25:05">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 16
+=============Log for permission==============
+action: update
+subject: 22
+Logged in
+is has subject true
+is has permission true
+=============Log for permission==============
+action: update
+subject: 22
+Logged in
+is has subject true
+is has permission true
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+nil
+#<Post id: 18, title: "Install Ubuntu 13.04 version 5", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:28:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 17
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+13
+#<Post id: 18, title: "Install Ubuntu 13.04 version 5", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:28:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 17
+=============Log for permission==============
+action: view
+subject: 22
+Logged in
+is has subject true
+is has permission true
+-------------log for show post-------------
+12
+#<Post id: 18, title: "Install Ubuntu 13.04 version 5", body: "<ol class=\"no-bullets\">\r\n<li>\r\n<div>\r\n<h3>Using a D...", user_id: 1, publish: nil, subject_id: 22, created_at: "2013-09-23 18:59:01", updated_at: "2013-09-24 22:28:27">
+===========================================================
+===========================================================
+Comment count 1
+Activities count: 17

@@ -1,0 +1,23 @@
+.newfeed-item.clearfix
+  .newfeed-avatar
+  	= image_tag a.owner.avatar.url(:thumb)
+  .newfeed-content.profile-activity-item
+    .profile-activity-text
+      p
+	      - if a.owner
+	      		=' link_to a.owner.full_name, a.owner, :class => "newfeed-author"
+	  	  - else
+	  	  		=' whose?(a.owner, a.trackable)
+	  	  | &nbsp
+  	  		
+      p
+	      span.newfeed-date
+	        span.icon-calendar
+	        =' distance_of_time_in_words_to_now a.created_at
+      = content_for :action
+      
+      /! .profile-activity-icon
+	  /!    a href=""
+	  /!      i.icon-edit
+	  /!    a href=""
+	  /!      i.icon-remove

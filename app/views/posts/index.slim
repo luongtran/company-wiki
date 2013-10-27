@@ -1,0 +1,11 @@
+#newfeeds
+  #newfeeds-header
+    span.icon-list style="margin-left: 20px;"
+    | Posts
+    
+    div.clearfix.new-post
+    	a.btn.btn-large.btn-success.pull-right.new-post-button href=(new_post_path(@subject))
+    		div.a-text +New post
+  #newfeeds-body
+
+	= render @posts

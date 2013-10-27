@@ -1,0 +1,6 @@
+= tinymce 
+= simple_form_for [@subject, @post], html: {class: 'form-horizontal' } do |f|
+	.field
+	  = f.input :title, input_html: { class: 'larger-input'}
+	  = f.input :body, input_html: { class: 'larger-input tinymce', rows: "25", cols: "50" }
+	  = f.button :submit,  class: 'btn btn-success pull-right btn-post'

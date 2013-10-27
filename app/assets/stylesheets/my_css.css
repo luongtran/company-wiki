@@ -1,0 +1,12 @@
+body.active_admin #collection_selection_toggle_panel {
+    display: none;
+}
+#treeViewDiv {
+    font-size: 110%;
+}
+#filters_sidebar_section strong {
+    padding: 7px;
+}
+#filters_sidebar_section{
+    display: none;
+}

@@ -1,0 +1,55 @@
+#container
+  #newfeeds-header
+    span.icon-list style="margin-left: 20px;"
+    | Posts
+    - if @enable_edit
+    	div.clearfix.new-post
+	    	a.btn.btn-large.btn-success.pull-right.new-post-button href=(subject_post_edit_path(@subject, @post))
+	    		div.a-text Edit post
+  #newfeeds-body
+
+		.newfeed-item.clearfix
+			.newfeed-content.left-panel
+				.newfeed-header.clearfix
+					 h3 = @post.title
+					 .pull-left = "Posted by: #{@post.user.full_name}"
+				     .pull-right= distance_of_time_in_words_to_now @post.created_at
+			    
+				.newfeed-primary
+					= raw @post.body
+				
+				- if @post.user_id == current_user.id
+					= link_to "remove this post", [@subject, @post], :method => :delete, :class => "btn btn-danger"
+				- if @enable_edit
+					= link_to "Edit Post", subject_post_edit_path(@subject, @post), :class => "btn btn-success pull-right"
+				hr
+				
+				.newfeed-header.clearfix.comment-title 
+					' Comments
+      				small= "(#{@comments.count})"
+				
+				= render @comments
+				hr
+				- if user_signed_in?
+					h6 Leave comment
+					= render :partial => "comments/form"
+			- if @post.version > 1		
+				.activities-sidebar.right-panel.panel.panel-default
+					.panel-heading
+						h3.panel-title Post's versions
+					.panel-body
+						= render partial:  "right_panel_post_version", :locals => {:versions => @post.versions}
+			
+			.activities-sidebar.right-panel.panel.panel-default
+				.panel-heading
+			    	h3.panel-title Post's activity
+		    	.panel-body
+				    - for activity in @activities
+				     	= render_activity(activity, :layout => "layouts/right_panel_activities")	
+		
+			
+			.clear	
+		
+
+
+  

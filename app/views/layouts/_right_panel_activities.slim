@@ -1,0 +1,24 @@
+.newfeed-item.clearfix
+      .newfeed-avatar.larger-avatar
+        - owner = a.owner
+        - avatar = owner.avatar
+        - if !avatar.nil?
+      	  = image_tag avatar.url(:thumb)
+      	- else
+      	  = image_tag "avatar1.png"
+      	.newfeed-header.clearfix.small
+          - if owner
+      		=' link_to owner.full_name, owner, :class => "newfeed-author"
+  	      - else
+  	  		=' whose?(owner, a.trackable)
+          span.newfeed-date
+            span.icon-calendar
+            | 
+            =' distance_of_time_in_words_to_now a.created_at
+      	
+      .newfeed-content.larger-panel
+        
+        .newfeed-primary
+          = content_for :action
+        = yield
+		hr

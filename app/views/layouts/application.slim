@@ -1,0 +1,83 @@
+doctype html
+html
+	head
+		title Company wiki
+		meta content="text/html; charset=UTF-8" http-equiv="Content-Type"
+	  	link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet"
+		
+		= stylesheet_link_tag "bootstrap.icon-large.min"
+		
+		= stylesheet_link_tag "application", :media => "all"
+		
+		= javascript_include_tag "application"
+		= javascript_include_tag "http://js.pusher.com/1.12/pusher.min.js"
+		/! = javascript_include_tag "jquery-2.0.0.min"
+		= javascript_include_tag "jquery.slimscroll.min"
+  		= csrf_meta_tags
+  		
+  		link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet"
+  		
+  		script src="asset/bootstrap/js/bootstrap.min.js" type="text/javascript"
+  		javascript:
+	       $(document).ready(function(){
+		   		$('.tree-toggle').click(function () {
+				    $(this).parent().children('ul.tree').toggle(200);
+				});
+		    });
+
+
+
+body
+   
+	.container-header
+      .container-fluid
+        .span3
+          a#logo href="#"
+        - if user_signed_in?
+	        #account-info.span10
+	          ul
+	            li#account-notify
+	              .btn-group
+	                a.btn.dropdown-toggle data-toggle="dropdown" href="#"
+	                  span.badge.badge-important 
+	                  	=' @number_new_feeds
+	                ul.dropdown-menu.new_feeds_dropdown
+	                  li.dropdown-header 
+	                  	=' @number_new_feeds
+	                  	| notify
+	                  - for activity in @new_activities
+	                  
+		                  li
+		                    = render_activity(activity, :layout => "layouts/top_panel_activities")
+	            li#account-action
+	              .btn-group
+	                a.btn.dropdown-toggle data-toggle="dropdown" href="#"
+	                  img#avatar src="asset/images/avatar.png"
+	                  | Hi,SFRTeam
+	                ul.dropdown-menu aria-labelledby="dropdownMenu" role="menu"
+	                  li
+	                  	i.icon-off
+	                    =' link_to "Logout", destroy_user_session_path, :method => :delete 
+	                  li
+	                    i.icon-edit
+	                    a href=(user_path(current_user)) My profile
+	                  /! li
+	                  /!  i.icon-arrow-right
+	                  /!  =' link_to "My page", my_page_path
+                    
+	.container-fluid
+	  	#sidebar.span3
+	  		- if user_signed_in?
+	  			= render partial: 'layouts/side_navigation', locals: {subjects: @subjects}
+		.span10
+		 - if user_signed_in?
+			 .row
+		          ul#navigation.breadcrumb
+		            li.nav-home
+		              a href="/"
+		                = image_tag "home-icon.png", :stype => "margin-right: 10px"
+		               
+		                | Home
+		            li.active =' params[:controller].humanize
+	     .row
+	       = yield 

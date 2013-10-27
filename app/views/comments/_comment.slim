@@ -1,0 +1,17 @@
+- user = comment.user
+- if !comment.nil? && !user.nil?
+	hr
+	.newfeed-header.clearfix
+		.newfeed-avatar.larger
+		    - avatar = user.avatar
+		    - if !avatar.nil?
+		      =' image_tag avatar.url(:thumb), :class => "left"
+		    - else
+			  =' image_tag "avatar1.png", :class => "left"
+		    =' link_to user.full_name, user, :class => "newfeed-author right"
+		    | &nbsp;
+		    span.said=' "said:"
+		.pull-right.comment-time=' distance_of_time_in_words_to_now comment.created_at, class: "timeago pull-right"
+	.newfeed-primary.comment-content
+	  = comment.comment   
+		

@@ -1,0 +1,23 @@
+
+.newfeed-item.clearfix
+	.newfeed-avatar
+	    - user = post.user
+	    - avatar = user.avatar
+	    - if !avatar.nil?
+			=' image_tag avatar.url(:thumb)
+		- else
+		 	=' image_tag "avatar1.png"
+		| &nbsp; 
+		=' user.full_name
+    .newfeed-content
+	    .newfeed-header.clearfix
+	      =' link_to post.title, [post.subject, post], :class => "newfeed-author"
+	      span.newfeed-date
+	        span.icon-calendar
+	        | 
+	        =' distance_of_time_in_words_to_now post.created_at
+	    .newfeed-primary
+	      = raw post.body
+	    .pull-right
+	    	= link_to "Comments (#{post.comments.count})", [@subject, post]
+hr
