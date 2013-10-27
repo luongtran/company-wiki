@@ -21,7 +21,7 @@ class UserMailer < ActionMailer::Base
     mail_subject = "#{@user.full_name} just #{action} on the post - #{@post.title}" 
     @receivers.each do |receiver|
       @receiver = receiver
-      mail(to: receiver.email, subject: mail_subject)
+      mail(to: receiver.email, subject: mail_subject).deliver
     end
   end
 end
