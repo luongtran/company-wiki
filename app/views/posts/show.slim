@@ -1,11 +1,12 @@
-#container
-  #newfeeds-header
-    span.icon-list style="margin-left: 20px;"
-    | Posts
+.content-area
+  p
+	i.icon-list
+	| Posts
     - if @enable_edit
     	div.clearfix.new-post
 	    	a.btn.btn-large.btn-success.pull-right.new-post-button href=(subject_post_edit_path(@subject, @post))
 	    		div.a-text Edit post
+  hr.divider/
   #newfeeds-body
 
 		.newfeed-item.clearfix

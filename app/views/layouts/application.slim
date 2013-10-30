@@ -6,8 +6,9 @@ html
 	  	link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet"
 		
 		= stylesheet_link_tag "bootstrap.icon-large.min"
+		= stylesheet_link_tag "bootstrap.min.css"
 		
-		= stylesheet_link_tag "application", :media => "all"
+		= stylesheet_link_tag "application1", :media => "all"
 		
 		= javascript_include_tag "application"
 		= javascript_include_tag "http://js.pusher.com/1.12/pusher.min.js"
@@ -29,55 +30,63 @@ html
 
 body
    
-	.container-header
-      .container-fluid
-        .span3
-          a#logo href="#"
+	.navbar.navbar-static-top
+      .navbar-inner
+        a.brand href="#" Company wiki
+        ul.nav
+          ul.nav
+            li.active
+              a href="#" Home
+            li
+              a href="#" Link
+            li
+              a href="#" Link
         - if user_signed_in?
-	        #account-info.span10
-	          ul
-	            li#account-notify
-	              .btn-group
-	                a.btn.dropdown-toggle data-toggle="dropdown" href="#"
-	                  span.badge.badge-important 
-	                  	=' @number_new_feeds
-	                ul.dropdown-menu.new_feeds_dropdown
-	                  li.dropdown-header 
-	                  	=' @number_new_feeds
-	                  	| notify
-	                  - for activity in @new_activities
-	                  
+	      ul.nav.pull-right
+	          li#account-notify.dropdown
+	            a.dropdown-toggle data-toggle="dropdown" href="#"
+	              span.badge.badge-important =' @number_new_feeds
+	              b.caret
+	            ul.dropdown-menu
+	              li
+	                a href="javascript:;"
+	                  strong =' @number_new_feeds
+	                  | notify
+	              - for activity in @new_activities
 		                  li
 		                    = render_activity(activity, :layout => "layouts/top_panel_activities")
-	            li#account-action
-	              .btn-group
-	                a.btn.dropdown-toggle data-toggle="dropdown" href="#"
-	                  img#avatar src="asset/images/avatar.png"
-	                  =' "Hi, #{current_user.full_name}"
-	                ul.dropdown-menu aria-labelledby="dropdownMenu" role="menu"
-	                  li
-	                  	i.icon-off
-	                    =' link_to "Logout", destroy_user_session_path, :method => :delete 
-	                  li
-	                    i.icon-edit
-	                    a href=(user_path(current_user)) My profile
-	                  /! li
-	                  /!  i.icon-arrow-right
-	                  /!  =' link_to "My page", my_page_path
+	          li.divider-vertical
+	          li#account-action
+	            a.dropdown-toggle data-toggle="dropdown" href="#"
+	              i.icon-user
+	              = "Hi, #{current_user.full_name}"
+	              b.caret
+	            ul.dropdown-menu aria-labelledby="dropdownMenu" role="menu"
+	              li
+	                a data-method="delete" href=(destroy_user_session_path) rel="nofollow"
+	                  i.icon-off
+	                  | Logout
+	              li
+	                a href=(user_path(current_user))
+	                  i.icon-edit
+	                  | My profile
                     
-	.container-fluid
-	  	#sidebar.span3
-	  		- if user_signed_in?
-	  			= render partial: 'layouts/side_navigation', locals: {subjects: @subjects}
-		.span10
-		 - if user_signed_in?
-			 .row
-		          ul#navigation.breadcrumb
-		            li.nav-home
-		              a href="/"
-		                = image_tag "home-icon.png", :stype => "margin-right: 10px"
-		               
-		                | Home
-		            li.active =' params[:controller].humanize
-	     .row
-	       = yield 
+	.body-page.container-fluid
+		.row-fluid
+			.span3
+		  	  - if user_signed_in?
+		  	    ul.nav.nav-list
+		  	    	= render partial: 'layouts/side_navigation', locals: {subjects: @subjects}
+		  	    
+		  	.span9
+		  	  ul.breadcrumb
+		  	     li
+	               a href="/"
+	                 i.icon-home
+	                 | Home
+	               span.divider /
+	             li.active 
+	               =' params[:controller].humanize
+		      .content-area
+		         .well 
+		           = yield 

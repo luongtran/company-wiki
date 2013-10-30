@@ -1,8 +1,11 @@
-#newfeeds
-  #newfeeds-header
-    span.icon-list style="margin-left: 20px;"
-    | New feed
-  #newfeeds-body
+p
+	i.icon-list
+	| New feed
+hr.divider/
+
+.well-inner
+    - for activity in @activities
+  	  = render_activity(activity, :layout => "layouts/activity_wrapper")
+
   
-  	- for activity in @activities
-  		= render_activity(activity, :layout => "layouts/activity_wrapper")
+  	

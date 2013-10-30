@@ -2,7 +2,7 @@ module ApplicationHelper
   
   def render_tree_menu(subjects)
     subjects.map do |subject, sub_subjects|
-      render(subject) + content_tag(:ul, render_tree_menu(sub_subjects), :class => "nav nav-list tree")
+      render(subject) + content_tag(:ul, render_tree_menu(sub_subjects), :class => "nav.nav-tabs.nav-stacked")
     end.join.html_safe
   end
   
@@ -50,7 +50,7 @@ module ApplicationHelper
   def link_to_trackable(object, object_type)
     if object
       subject = object.subject
-      link_to object_type.downcase, [subject, object]
+      link_to object_type.downcase, [subject, object], :class => "btn btn-mini btn-success"
     else
       "a #{object_type.downcase} which does not exist anymore"
     end
