@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head><title>Company wiki</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+    <link href="assets/stylesheets/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="assets/stylesheets/bootstrap.icon-large.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="assets/stylesheets/application1.css" media="all" rel="stylesheet" type="text/css">
+
+    <script src="assets/javascripts/jquery.js" type="text/javascript"></script>
+    <script src="assets/javascripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/application.js" type="text/javascript"></script>
+    <script src="http://js.pusher.com/1.12/pusher.min.js" type="text/javascript"></script>
+
+    <!--= javascript_include_tag "jquery-2.0.0.min"-->
+    <script src="assets/javascripts/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <meta content="authenticity_token" name="csrf-param">
+    <meta content="SCNzvQSV2FLxgbLZhSdL6Ly7o+K9e7vm1ox15mN+jB4=" name="csrf-token">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet">
+    <!--script src="/assets/bootstrap/js/bootstrap.min.js" type="text/javascript"-->
+    <script type="text/javascript">$(document).ready(function () {
+        $('.tree-toggle').click(function () {
+            $(this).parent().children('ul.tree').toggle(200);
+        });
+    });</script>
+</head>
+<body style="">
+
+<div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+        <a class="brand" href="#">Company Wifi</a>
+        <ul class="nav">
+            <ul class="nav">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </ul>
+
+        <ul class="nav pull-right">
+            <li id="account-notify" class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="badge badge-important">0</span>
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="javascript:;"><strong>0</strong> notify</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="divider-vertical"></li>
+            <li id="account-action">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="icon-user"></i>
+                    Hi, Luong Tran
+                    <b class="caret"></b>
+                </a>
+                <ul aria-labelledby="dropdownMenu" class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="/users/sign_out" data-method="delete" rel="nofollow">
+                            <i class="icon-off"></i>
+                            Logout
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/1">
+                            <i class="icon-edit"></i>
+                            My profile
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="body-page container-fluid">
+    <div class="row-fluid">
+        <div class="span3">
+            <ul class="nav nav-list">
+                <li class="nav-bootstrap"><label class="tree-toggle nav-header">
+                    <!--span.icon-text-width               --><span><a href="/subjects/1">Information
+                    technology</a> </span><span class="icon-chevron-down"></span></label></li>
+                <ul class="nav nav-list tree">
+                    <li class="nav-bootstrap"><!--span.icon-text-width               --><span><a href="/subjects/2">Software</a> </span><span
+                            class="icon-chevron-down"></span></li>
+                    <ul class="nav nav-list tree">
+                        <li class="nav-bootstrap"><!--span.icon-text-width               --><span><a href="/subjects/4">Operation
+                            System</a> </span></li>
+                        <ul class="nav nav-list tree"></ul>
+                        <li class="nav-bootstrap"><!--span.icon-text-width               --><span><a href="/subjects/5">Office</a> </span>
+                        </li>
+                        <ul class="nav nav-list tree"></ul>
+                    </ul>
+                    <li class="nav-bootstrap"><!--span.icon-text-width               --><span><a href="/subjects/3">Hardware</a> </span>
+                    </li>
+                    <ul class="nav nav-list tree"></ul>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="span9">
+
+            <ul class="breadcrumb">
+                <li><a href="#"><i class="icon-home"></i> Home</a> <span class="divider">/</span></li>
+                <li><a href="#">Library</a> <span class="divider">/</span></li>
+                <li class="active">Data</li>
+            </ul>
+
+            <div class="content-area">
+
+                <div class="well">
+                    <p>
+                        <i class="icon-list"></i>
+                        New feed
+                    </p>
+
+                    <hr class="divider"/>
+
+                    <div class="well-inner">
+                        <div class="newfeed-item media">
+                            <p class="pull-left newfeed-avatar">
+                                <img alt="Aval" src="/system/users/avatars/000/000/001/thumb/aval.jpg">
+                            </p>
+                            <div class="media-body newfeed-content">
+                                <div class="row-fluid">
+                                    <div class="span9">
+                                        <h4 class="media-heading newfeed-header">
+                                            <a href="#" class="text-success pull-left">Luong Tran</a>
+                                        </h4>
+                                    </div>
+                                    <div class="span3">
+                                        <p class="newfeed-date">
+                                            <span class="icon-calendar"></span>
+                                            <small>about 22 hours</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="newfeed-primary">
+                                    <small>commented on his</small>
+                                    <a class="btn btn-mini btn-success" href="/subjects/4/posts/8">
+                                        <i class="icon-asterisk icon-white"></i>
+                                        post
+                                    </a>
+                                </div>
+                                <hr/>
+                                <div class="comment">
+                                    test comment
+                                </div>
+                            </div>
+                            <hr class="divider"/>
+                        </div>
+                        <div class="newfeed-item media">
+                            <p class="pull-left newfeed-avatar">
+                                <img alt="Aval" src="/system/users/avatars/000/000/001/thumb/aval.jpg">
+                            </p>
+                            <div class="media-body newfeed-content">
+                                <div class="row-fluid">
+                                    <div class="span9">
+                                        <h4 class="media-heading newfeed-header">
+                                            <a href="#" class="text-success pull-left">Luong Tran</a>
+                                        </h4>
+                                    </div>
+                                    <div class="span3">
+                                        <p class="newfeed-date">
+                                            <span class="icon-calendar"></span>
+                                            <small>about 22 hours</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="newfeed-primary">
+                                    <small>commented on his</small>
+                                    <a class="btn btn-mini btn-success" href="/subjects/4/posts/8">
+                                        <i class="icon-asterisk icon-white"></i>
+                                        post
+                                    </a>
+                                </div>
+                                <hr/>
+                                <div class="comment">
+                                    test comment
+                                </div>
+                                <hr class="divider"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
