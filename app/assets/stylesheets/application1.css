@@ -219,10 +219,12 @@
 }
 
 #newfeeds-header {
-    height: 38px;
+    height: 45px;
     border-bottom: 1px solid rgb(229, 229, 229);
-    line-height: 38px;
+    line-height: 45px;
     background: linear-gradient(to bottom, rgb(255, 255, 255) 0px, rgb(238, 238, 238) 100%) repeat-x scroll 0px 0px rgb(247, 247, 247);
+    margin-top: -19px;
+	margin-left: -18px;
 }
 
 .dropdown-menu {
@@ -235,4 +237,23 @@
 	position: absolute;
 	top: 7px;
 	left: 9px;
+}
+
+.new-post {
+	float:right;
+}
+
+#newfeeds .newfeed-avatar {
+	margin-top:20px;
+	margin-bottom:20px;
+	color:#0077B3;
+}
+
+#newfeeds .newfeed-header a {
+	font-size:24px;
+}
+
+.newfeed-date {
+	float:right;
+	color: #69AA46;
 }
