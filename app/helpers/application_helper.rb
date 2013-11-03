@@ -2,7 +2,12 @@ module ApplicationHelper
   
   def render_tree_menu(subjects)
     subjects.map do |subject, sub_subjects|
-      render(subject) + content_tag(:ul, render_tree_menu(sub_subjects), :class => "nav.nav-tabs.nav-stacked")
+      if subject.has_children?
+        render(subject) + content_tag(:ul, render_tree_menu(sub_subjects), :class => "nav.nav-tabs.nav-stacked")
+      else
+        render(subject)
+      end
+      
     end.join.html_safe
   end
   

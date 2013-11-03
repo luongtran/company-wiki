@@ -10,7 +10,229 @@
  *
  *= require_self
  */
-    .nested_subjects {  
-      margin-left: 30px;  
-    }  
-    
+   
+ .activities-sidebar {
+ 	border: 1px solid rgb(204, 204, 204);
+ 	margin-bottom: 20px;
+ 	box-shadow: none;
+	margin: 3px 0px;
+	padding: 0px;
+	
+	
+ }
+ 
+ .panel-heading {
+ 	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	-moz-box-sizing: content-box;
+	background: linear-gradient(to bottom, rgb(255, 255, 255) 0px, rgb(238, 238, 238) 100%) repeat-x scroll 0px 0px rgb(247, 247, 247);
+	border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(221, 221, 221);
+	border-image: none;
+	border-style: solid;
+	border-width: 1px;
+	color: rgb(102, 159, 199);
+	min-height: 38px;
+	padding-left: 12px;
+	position: relative;
+ }
+ 
+ .panel-body {
+ 	padding-left:10px;
+ }
+ 
+ .left-panel {
+ 	float:left;
+ 	width:70%;
+ }
+ 
+ .right-panel {
+ 	float:left;
+ 	width:27.6%;
+ 	margin-left:20px;
+ 	
+ }
+ 
+ .larger-avatar {
+    padding: 3px;
+    width: 11%;
+    float: left;
+}
+ 
+ .larger-avatar img {
+    width: 30px;
+    max-width: 40px;
+	border-radius: 100% 100% 100% 100%;
+	border: 2px solid rgb(201, 214, 229);
+}
+
+.larger-panel {
+	width: 84%;
+	padding: 3px;
+	margin: 0px;
+	float: left;
+}
+
+.clear {
+	clear:both;
+}
+
+
+.comment-title {
+	color: rgb(0, 136, 204);
+}
+
+/******************* FROFILE ******************************/
+#my-profile {
+    margin-left: 0px;
+    margin-top: 20px;
+}
+#profile-avatar {
+    text-align: center;
+}
+#avatar-picture {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    width: auto;
+}
+#avatar-picture img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+#avatar-picture img {
+    border: 1px dotted #BBBBBB;
+    margin: 3px;
+}
+#avatar-upload {
+    margin: 3px;
+    position: relative;
+}
+#avatar-upload .thumbnail {
+    min-width: 12em;
+    min-height: 11em;
+}
+#avatar-upload-close {
+    position: absolute;
+    right: -2px;
+    top:-2px;
+    cursor: pointer;
+}
+
+#profile-name {
+    background: url('profile-bg.png') center center no-repeat;
+    min-width: 228px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+#frofile-table {
+    width: 100%;
+    border: 1px solid #DCEBF7;
+}
+#frofile-table th,#frofile-table td {
+    padding: 5px;
+}
+#frofile-table td {
+    border-bottom: 1px solid #DfffEf;
+}
+#frofile-table th {
+    border-bottom: 1px solid #ffffff;
+    background: #EDF3F4;
+    font-weight: normal;
+    color: #336199;
+    width: 15%;
+    text-align: right;
+}
+#profile-activity {
+    margin: 20px 0px;
+}
+#icon-rss-id{
+    position: absolute;
+    top:7px;
+    left: 9px;
+}
+#profile-activity .profile-activity-item {
+    border: none;
+}
+#profile-activity .newfeed-item {
+    border-bottom: 1px dotted #CCCCCC;
+}
+#profile-activity .newfeed-content {
+    padding: 0 10px;
+    margin: 5px 0px;
+}
+#profile-activity .newfeed-item:hover {
+    background: #F4F9FD;
+}
+#profile-activity .newfeed-item:hover .profile-activity-icon {
+   display: inline-block;
+}
+#profile-activity .newfeed-avatar {
+    padding: 5px;
+    width: 5%;
+}
+.profile-activity-item {
+    position: relative;
+}
+
+.profile-activity-text {
+    width: 90%;
+}
+.profile-activity-text p {
+    padding: 0px;
+    margin: 0px;
+}
+.profile-activity-icon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: none;
+}
+#profile-seeting {
+    position: absolute;
+    top:36%;
+    right: 0px;
+}
+#profile-seeting ul.dropdown-menu {
+    left: -124px;
+}
+
+#profile-seeting ul.dropdown-menu a {
+	color:black;
+	font-size: 14px;
+}
+
+.modal-footer {
+	font-size:14px;
+}
+#message {
+	display:none;
+}
+
+.modal.fade.in {
+	top: 2%;
+}
+
+#newfeeds-header {
+    height: 38px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    line-height: 38px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 0px, rgb(238, 238, 238) 100%) repeat-x scroll 0px 0px rgb(247, 247, 247);
+}
+
+.dropdown-menu {
+	width:300px;
+	max-height:500px;
+	overflow-y: scroll;
+}
+
+#icon-rss-id {
+	position: absolute;
+	top: 7px;
+	left: 9px;
+}

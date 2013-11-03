@@ -84,7 +84,7 @@
   
 #profile-activity.row
 	  #newfeeds-header.cle style="position: relative"
-	    i#icon-rss-id.icon-large.icon-rss
+	    i#icon-rss-id.icon-list
 	    span style="padding-left: 40px;" | Recent Activities
 	  #profile-activity-body
 	    - for activity in @activities
@@ -100,7 +100,8 @@
 #profile-seeting
   .btn-group
     a.btn.dropdown-toggle data-toggle="dropdown" href="#"
-      i.icon-large.icon-settings
+      i.icon-cog 
+      span Setting
     ul.dropdown-menu
       li
         a data-toggle="modal" href="#change-pass-modal"  Change password

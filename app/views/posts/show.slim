@@ -26,8 +26,9 @@
 				hr
 				
 				.newfeed-header.clearfix.comment-title 
-					' Comments
-      				small= "(#{@comments.count})"
+					h4
+					  | Comment
+					  span.small= "(#{@comments.count})"
 				
 				= render @comments
 				hr

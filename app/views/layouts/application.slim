@@ -54,7 +54,8 @@ body
 	                  | notify
 	              - for activity in @new_activities
 		                  li
-		                    = render_activity(activity, :layout => "layouts/top_panel_activities")
+		                   /! = render_activity(activity, :layout => "layouts/top_panel_activities")
+		                   = render_activity(activity, :layout => "layouts/right_panel_activities")
 	          li.divider-vertical
 	          li#account-action
 	            a.dropdown-toggle data-toggle="dropdown" href="#"
