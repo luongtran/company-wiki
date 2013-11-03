@@ -257,3 +257,7 @@
 	float:right;
 	color: #69AA46;
 }
+
+#post li {
+	list-style: none;
+}
